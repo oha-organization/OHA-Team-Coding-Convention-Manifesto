@@ -60,7 +60,8 @@ unless there is an acceptable logical reason. Brief examples as follows:
       Context + Verb + How (user_get_by_id)
       Examples: user_add(), user_delete(), user_delete_by_name()
       
-      1. If function name is too general like Python builtin functions use only verb or Verb + Context + How style.
+      1. If function name is too general like [Python builtin functions](https://docs.python.org/3/library/functions.html)
+      use only verb or Verb + Context + How.
       Example: len, isinstance(), getattr() settattr, get_elements_by_id(), get_elements_by_class_name()
 
 
