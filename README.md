@@ -113,7 +113,11 @@ unless there is an acceptable logical reason. Brief examples as follows:
       'CONSTRAINT uc_person UNIQUE (id, last_name)'
       'CONSTRAINT pk_person UNIQUE (id, last_name)'
       'CONSTRAINT fk_order_person FOREIGN KEY (person_id) REFERENCES person(id)'
-      'CONSTRAINT chk_person_age CHECK (age>=18 AND city='Sandnes')'
+      'CONSTRAINT chk_person_age CHECK (age>=18 AND city="Sandnes")'
+      
+      'CONSTRAINT fk_note_task FOREIGN KEY (task_id) REFERENCES task(id)'
+      'CONSTRAINT fk_task_user FOREIGN KEY (user_id) REFERENCES user(id)'
+      
       
 
 1. Unless there is a generally acceptable logical reason, follow the rules.
