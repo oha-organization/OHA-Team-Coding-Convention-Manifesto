@@ -118,7 +118,14 @@ unless there is an acceptable logical reason. Brief examples as follows:
       'CONSTRAINT fk_note_task FOREIGN KEY (task_id) REFERENCES task(id)'
       'CONSTRAINT fk_task_user FOREIGN KEY (user_id) REFERENCES user(id)'
       
+      1. Use short table names
+      Examples: site is better than site_detail
       
+      1. Date type column names: Suffix your date-type column names with _on or _date.
+      Example: updated_on, updated_date or pub_date
+      
+      1. Date-Time type column names: If your column name has time with it, then suffix them with _at or _time.
+      Examples: ordered_at, order_time or created_time
 
 1. Unless there is a generally acceptable logical reason, follow the rules.
 
