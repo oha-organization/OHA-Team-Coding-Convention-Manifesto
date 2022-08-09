@@ -109,7 +109,11 @@ unless there is an acceptable logical reason. Brief examples as follows:
       Examples: 'CREATE INDEX idx_first_name_last_name ON person (first_name, last_name)';
       
       1. Constraint: Use pk_, uc_, fk_, chk_, etc. prefix for naming constrain.
-      Example: 
+      Examples: 
+      'CONSTRAINT uc_person UNIQUE (id, last_name)'
+      'CONSTRAINT pk_person UNIQUE (id, last_name)'
+      'CONSTRAINT fk_order_person FOREIGN KEY (person_id) REFERENCES person(id)'
+      'CONSTRAINT chk_person_age CHECK (age>=18 AND city='Sandnes')'
       
 
 1. Unless there is a generally acceptable logical reason, follow the rules.
