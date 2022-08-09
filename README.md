@@ -126,17 +126,8 @@ unless there is an acceptable logical reason. Brief examples as follows:
       
       1. Date-Time type column names: If your column name has time with it, then suffix them with _at or _time.
       Examples: ordered_at, order_time or created_time
+      
+      1. Boolean type column Names: If you have boolean type column names, then prefix them with is_ or has_.
+      Examples: is_admin or has_membership
 
-1. Unless there is a generally acceptable logical reason, follow the rules.
-
-1. Precedence refers to how versions are compared to each other when ordered.
-
-   1. Precedence MUST be calculated by separating the version into major,
-      minor, patch and pre-release identifiers in that order (Build metadata
-      does not figure into precedence).
-
-   1. Precedence is determined by the first difference when comparing each of
-      these identifiers from left to right as follows: Major, minor, and patch
-      versions are always compared numerically.
-
-      Example: 1.0.0 < 2.0.0 < 2.1.0 < 2.1.1.
+1. Only things worse than a bad convention are multiple conventions or no conventions. 
