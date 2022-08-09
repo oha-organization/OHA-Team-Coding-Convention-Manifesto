@@ -20,10 +20,11 @@ Unless there is a generally acceptable logical reason, follow the rules.
 
 Folowed standarts:
 
-1. Semantic Versioning
-1. Conventional Commit
-1. PEP 8 – Style Guide for Python Code
-1. GitHub Workflow for Committing [Using workflows](https://docs.github.com/en/actions/using-workflows)
+1. [Semantic Versioning](https://semver.org/)
+1. [Conventional Commit](https://www.conventionalcommits.org/)
+1. [PEP 8 – Style Guide for Python Code](https://peps.python.org/pep-0008/)
+1. [PEP 20 – The Zen of Python](https://peps.python.org/pep-0020/)
+1. [GitHub Workflow for Committing](https://docs.github.com/en/actions/using-workflows)
 
 Followed standarts will be added.
 
