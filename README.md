@@ -55,24 +55,25 @@ interpreted as described in [RFC 2119](https://tools.ietf.org/html/rfc2119).
 unless there is an acceptable logical reason. Brief examples as follows:
 
       1. Identifier(variable): All small letters, if two or more word use snake case style.
-      Examples: person, height, first_name
+      Examples: ```person, height, first_name```
 
       1. Collection(list, tuple, array, vs.): Plural names or name_list.
-      Examples: colors, user_list, question_list, questions
+      Examples: ```colors, user_list, question_list, questions```
 
       1. Function(method): All small letters, snake case, concise imperative sentences.
       Context + Verb + How (user_get_by_id)
-      Examples: user_add(), user_delete(), user_delete_by_name()
+      Examples: ```user_add(), user_delete(), user_delete_by_name()```
       
       1. If function name is too general like [Python builtin functions](https://docs.python.org/3/library/functions.html)
       use only verb or Verb + Context + How. As The Zen of Python -> Although practicality beats purity.
-      Example: len, isinstance(), getattr() settattr, get_elements_by_id(), get_elements_by_class_name()
+      Example:
+      ```sql len, isinstance(), getattr() settattr, get_elements_by_id(), get_elements_by_class_name() ```
       
-      1. Class: Pascal case and noun.
-      Examples: Color, Animal, IndexView
+      1. Class: Pascal case and noun.     
+      Examples: ```Color, Animal, IndexView```
       
       1. Module(file): All small letters, single word, if two or more word use flat case style.
-      Examples: calender, collections, configparser
+      Example: ```calender, collections, configparser```
       
       1. All other detail(comment, white spaces, conditional, expression, statement, etc.) use
       [PEP 8 – Style Guide for Python](https://peps.python.org/pep-0008/)
