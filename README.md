@@ -101,9 +101,15 @@ unless there is an acceptable logical reason. Brief examples as follows:
       
       1. Foreign Key fields should be named foo_id(foo is table name)
 
-      1. Use Explicit Name not abbreviated forms.
+      1. Use Explicit name not abbreviated forms (Except common abbreviations like i18n).
       Example: first_name, middle_name, primary_address, not f_name, l_name or mid_name
       
+      1. Index(idx_) : Indexes should be explicitly named and include both the table name and the column names indexed.
+      Use idx_ prefix to show that is index.
+      Examples: 'CREATE INDEX idx_first_name_last_name ON person (first_name, last_name)';
+      
+      1. Constraint: Use pk_, uc_, fk_, chk_, etc. prefix for naming constrain.
+      Example: 
       
 
 1. Unless there is a generally acceptable logical reason, follow the rules.
