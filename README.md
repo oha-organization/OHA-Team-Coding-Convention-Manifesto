@@ -1,6 +1,8 @@
 # OHA Team Coding Convention Manifesto
 
-"OHA Team Coding Convention Manifesto" contains a set of rules and requirements that dictate why and how OHA Team follow coding convention standards in company. You can find full document in [OHA-Team-Coding-Convention-Manifesto.md](./README.md) or visit our official website [ohateam.com/coding-convention-manifesto](https://ohateam.org/coding-convention-manifesto.com) to find previous versions and localized specifications.
+[![OHA Team Coding Convention](https://img.shields.io/badge/OHA%20Team%20Coding%20Convention-0.1.0-green)](https://github.com/oha-organization/OHA-Team-Coding-Convention-Manifesto/)
+
+"OHA Team Coding Convention Manifesto" contains a set of rules and requirements that dictate why and how OHA Team follow coding convention standards in company. You can find full document in [OHA-Team-Coding-Convention-Manifesto.md](./README.md) or visit our official website [OHA Team Coding Convention Manifesto](https://ohateam.org/coding-convention-manifesto.com) to find previous versions and localized specifications.
 
 All projects, apps, files, classes, functions, variable, etc. MUST apply rule of OHA Team coding convention.
 
