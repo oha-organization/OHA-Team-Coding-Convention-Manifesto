@@ -78,17 +78,33 @@ unless there is an acceptable logical reason. Brief examples as follows:
       [PEP 8 – Style Guide for Python](https://peps.python.org/pep-0008/)
 
 
-1. For database design:
+1. For database naming Convention:
 
-      1. Identifier(variable): All small letters, if two or more word use snake case style.
-      Examples: person, height, first_name
+      1. Database, table, column, view, constraint, etc. all these names should be small ASCII letters.
+      Except SQL keyword like SELECT, FROM, ORDER etc. for readiblity.
+      Example: 'SELECT * FROM person WHERE name="Alice" ORDER BY last_name'
+      
+      1. Avoid quotes(white spaces): Don't use white spaces or quotes table, column, etc. names.
+      Examples: Don't do these "User Table", "First name", "SchoolTable"
+      
+      1. Avoid reserved words(user, delete, select, lock, etc.).
+      
+      1. Avoid using type names(text, date, integer, timestamp, etc.).
 
-      1. Collection(list, tuple, array, vs.): Plural names or name_list.
-      Examples: colors, user_list, question_list, questions
+      1. Use singlular names for tables, views, and other relations not plural.
+      Examples: person, student, member, question
 
-      1. Function(method): All small letters, snake case, concise imperative sentences.
-      Context + Verb + How (user_get_by_id)
-      Examples: user_add(), user_delete(), user_delete_by_name()
+      1. Use underscores separate words.
+      Examples: first_name, last_name, middle_name
+      
+      1. Primary key fields should be named id, not userid, userID, userId or user_id
+      
+      1. Foreign Key fields should be named foo_id(foo is table name)
+
+      1. Use Explicit Name not abbreviated forms.
+      Example: first_name, middle_name, primary_address, not f_name, l_name or mid_name
+      
+      
 
 1. Unless there is a generally acceptable logical reason, follow the rules.
 
