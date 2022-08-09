@@ -7,3 +7,75 @@ All projects, apps, files, classes, functions, variable, etc. MUST apply rule of
 The goal of this manifesto is to produce safe, secure, fast and easy understandable code by using manifesto standard. 
 
 Changes to the document and open an issue by a [GitHub Open Issue](https://github.com/oha-organization/OHA-Team-Coding-Convention-Manifesto/issues) which you can use.
+
+
+OHA Team Coding Convention Declaration 0.0.1
+============================================
+
+Summary
+-------
+
+There is no exact coding style for programming languages but known the best practice is keep consistent.
+Unless there is a generally acceptable logical reason, follow the rules.
+
+Folowed standarts:
+
+1. Semantic Versioning
+1. Conventional Commit
+1. PEP 8 – Style Guide for Python Code
+
+Followed standarts will be added.
+
+Introduction
+------------
+
+In the world of software management standarts are important.
+In this document we make another standart for OHA Team Company.
+We call this system "OHA Team Coding Convention." Under this scheme,
+you will use concrate declations for easily and safely moving your project forward.
+
+OHA Team Coding Convention Specification (SemVer)
+-------------------------------------------------
+
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD",
+"SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be
+interpreted as described in [RFC 2119](https://tools.ietf.org/html/rfc2119).
+
+1. There is no exact coding style for programming languages but keep consistent.
+
+1. Unless there is a generally acceptable logical reason, follow the rules.
+
+1. For version number use "Semantic Version" (SEMVER) MAJOR.MINOR.PATCH style numbering.
+
+1. For coding style use [PEP 8 – Style Guide for Python](https://peps.python.org/pep-0008/),
+unless there is an acceptable logical reason. Brief examples as follows:
+
+      1. Identifier(variable): All small letter, if two or more word use snake case style.
+      Examples: person, height, first_name
+
+      1. Collection(list, tuple, array, vs.): Plural names or name_list.
+      Examples: colors, user_list, question_list, questions
+
+      1. Function(method): All small letter, snake case, concise imperative sentences.
+      Context + Verb + How (user_get_by_id)
+      Examples: user_add(), user_delete(), user_delete_by_name()
+      
+      1. If function name is too general like Python builtin functions use only verb or Verb + Context + How style.
+      Example: len, isinstance(), getattr() settattr, get_elements_by_id(), get_elements_by_class_name()
+
+
+1. Unless there is a generally acceptable logical reason, follow the rules.
+
+1. Unless there is a generally acceptable logical reason, follow the rules.
+
+1. Precedence refers to how versions are compared to each other when ordered.
+
+   1. Precedence MUST be calculated by separating the version into major,
+      minor, patch and pre-release identifiers in that order (Build metadata
+      does not figure into precedence).
+
+   1. Precedence is determined by the first difference when comparing each of
+      these identifiers from left to right as follows: Major, minor, and patch
+      versions are always compared numerically.
+
+      Example: 1.0.0 < 2.0.0 < 2.1.0 < 2.1.1.
