@@ -103,7 +103,9 @@ unless there is an acceptable logical reason. Brief examples as follows:
     
         Example:
         
-        ```'SELECT * FROM person WHERE name="Alice" ORDER BY last_name'```
+        ```sql
+        'SELECT * FROM person WHERE name="Alice" ORDER BY last_name'
+        ```
       
     1. Avoid quotes(white spaces): Don't use white spaces or quotes table, column, etc. names.
     
@@ -140,23 +142,27 @@ unless there is an acceptable logical reason. Brief examples as follows:
     
         Examples:
         
-        ```'CREATE INDEX idx_first_name_last_name ON person (first_name, last_name)';```
+        ```sql
+        'CREATE INDEX idx_first_name_last_name ON person (first_name, last_name)';
+        ```
       
     1. Constraint: Use pk_, uc_, fk_, chk_, etc. prefix for naming constrain.
         
         Examples:
         
-        ```'CONSTRAINT uc_person UNIQUE (id, last_name)'```
+        ```sql
+        'CONSTRAINT uc_person UNIQUE (id, last_name)'
         
-        ```'CONSTRAINT pk_person UNIQUE (id, last_name)'```
+        'CONSTRAINT pk_person UNIQUE (id, last_name)'
         
-        ```'CONSTRAINT fk_order_person FOREIGN KEY (person_id) REFERENCES person(id)'```
+        'CONSTRAINT fk_order_person FOREIGN KEY (person_id) REFERENCES person(id)'
         
-        ```'CONSTRAINT chk_person_age CHECK (age>=18 AND city="Sandnes")'```
+        'CONSTRAINT chk_person_age CHECK (age>=18 AND city="Sandnes")'
         
-        ```'CONSTRAINT fk_note_task FOREIGN KEY (task_id) REFERENCES task(id)'```
+        'CONSTRAINT fk_note_task FOREIGN KEY (task_id) REFERENCES task(id)'
         
-        ```'CONSTRAINT fk_task_user FOREIGN KEY (user_id) REFERENCES user(id)'```
+        'CONSTRAINT fk_task_user FOREIGN KEY (user_id) REFERENCES user(id)'
+        ```
       
     1. Use short table names
     
