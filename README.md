@@ -54,79 +54,79 @@ interpreted as described in [RFC 2119](https://tools.ietf.org/html/rfc2119).
 1. For coding style use [PEP 8 – Style Guide for Python](https://peps.python.org/pep-0008/),
 unless there is an acceptable logical reason. Brief examples as follows:
 
-      1. Identifier(variable): All small letters, if two or more word use snake case style.
-      Examples: ```person, height, first_name```
+    1. Identifier(variable): All small letters, if two or more word use snake case style.
+    Examples: ```person, height, first_name```
 
-      1. Collection(list, tuple, array, vs.): Plural names or name_list.
-      Examples: ```colors, user_list, question_list, questions```
+    1. Collection(list, tuple, array, vs.): Plural names or name_list.
+    Examples: ```colors, user_list, question_list, questions```
 
-      1. Function(method): All small letters, snake case, concise imperative sentences.
-      Context + Verb + How (user_get_by_id)
-      Examples: ```user_add(), user_delete(), user_delete_by_name()```
+    1. Function(method): All small letters, snake case, concise imperative sentences.
+    Context + Verb + How (user_get_by_id)
+    Examples: ```user_add(), user_delete(), user_delete_by_name()```
       
-      1. If function name is too general like [Python builtin functions](https://docs.python.org/3/library/functions.html)
-      use only verb or Verb + Context + How. As The Zen of Python -> Although practicality beats purity.
-      Example:```sql len, isinstance(), getattr() settattr, get_elements_by_id(), get_elements_by_class_name()```
+    1. If function name is too general like [Python builtin functions](https://docs.python.org/3/library/functions.html)
+    use only verb or Verb + Context + How. As The Zen of Python -> Although practicality beats purity.
+    Example:```sql len, isinstance(), getattr() settattr, get_elements_by_id(), get_elements_by_class_name()```
       
-      1. Class: Pascal case and noun.
-      Examples: ```Color, Animal, IndexView```
+    1. Class: Pascal case and noun.
+    Examples: ```Color, Animal, IndexView```
       
-      1. Module(file): All small letters, single word, if two or more word use flat case style.
-      Example: ```calender, collections, configparser```
+    1. Module(file): All small letters, single word, if two or more word use flat case style.
+    Example: ```calender, collections, configparser```
       
-      1. All other detail(comment, white spaces, conditional, expression, statement, etc.) use
-      [PEP 8 – Style Guide for Python](https://peps.python.org/pep-0008/)
+    1. All other detail(comment, white spaces, conditional, expression, statement, etc.) use
+    [PEP 8 – Style Guide for Python](https://peps.python.org/pep-0008/)
 
 
 1. For database naming Convention:
 
-      1. Database, table, column, view, constraint, etc. all these names should be small ASCII letters.
-      Except SQL keyword like SELECT, FROM, ORDER etc. for readiblity.
-      Example: ```'SELECT * FROM person WHERE name="Alice" ORDER BY last_name'```
+    1. Database, table, column, view, constraint, etc. all these names should be small ASCII letters.
+    Except SQL keyword like SELECT, FROM, ORDER etc. for readiblity.
+    Example: ```'SELECT * FROM person WHERE name="Alice" ORDER BY last_name'```
       
-      1. Avoid quotes(white spaces): Don't use white spaces or quotes table, column, etc. names.
-      Examples: Don't do these "User Table", "First name", "SchoolTable"
+    1. Avoid quotes(white spaces): Don't use white spaces or quotes table, column, etc. names.
+    Examples: Don't do these "User Table", "First name", "SchoolTable"
       
-      1. Avoid reserved words(user, delete, select, lock, etc.).
+    1. Avoid reserved words(user, delete, select, lock, etc.).
       
-      1. Avoid using type names(text, date, integer, timestamp, etc.).
+    1. Avoid using type names(text, date, integer, timestamp, etc.).
 
-      1. Use singlular names for tables, views, and other relations not plural.
-      Examples: ```person, student, member, question```
+    1. Use singlular names for tables, views, and other relations not plural.
+    Examples: ```person, student, member, question```
 
-      1. Use underscores separate words.
-      Examples: ```first_name, last_name, middle_name```
+    1. Use underscores separate words.
+    Examples: ```first_name, last_name, middle_name```
       
-      1. Primary key fields should be named ```id, not userid, userID, userId or user_id```
+    1. Primary key fields should be named ```id, not userid, userID, userId or user_id```
       
-      1. Foreign Key fields should be named ```foo_id```(foo is table name)
+    1. Foreign Key fields should be named ```foo_id```(foo is table name)
 
-      1. Use Explicit name not abbreviated forms (Except common abbreviations like i18n).
-      Example: ```first_name, middle_name, primary_address, not f_name, l_name or mid_name```
+    1. Use Explicit name not abbreviated forms (Except common abbreviations like i18n).
+    Example: ```first_name, middle_name, primary_address, not f_name, l_name or mid_name```
       
-      1. Index(idx_) : Indexes should be explicitly named and include both the table name and the column names indexed.
-      Use idx_ prefix to show that is index.
-      Examples: ```'CREATE INDEX idx_first_name_last_name ON person (first_name, last_name)';```
+    1. Index(idx_) : Indexes should be explicitly named and include both the table name and the column names indexed.
+    Use idx_ prefix to show that is index.
+    Examples: ```'CREATE INDEX idx_first_name_last_name ON person (first_name, last_name)';```
       
-      1. Constraint: Use pk_, uc_, fk_, chk_, etc. prefix for naming constrain.
-      Examples:
-      ```'CONSTRAINT uc_person UNIQUE (id, last_name)'```
-      ```'CONSTRAINT pk_person UNIQUE (id, last_name)'```
-      ```'CONSTRAINT fk_order_person FOREIGN KEY (person_id) REFERENCES person(id)'```
-      ```'CONSTRAINT chk_person_age CHECK (age>=18 AND city="Sandnes")'```
-      ```'CONSTRAINT fk_note_task FOREIGN KEY (task_id) REFERENCES task(id)'```
-      ```'CONSTRAINT fk_task_user FOREIGN KEY (user_id) REFERENCES user(id)'```
+    1. Constraint: Use pk_, uc_, fk_, chk_, etc. prefix for naming constrain.
+    Examples:
+    ```'CONSTRAINT uc_person UNIQUE (id, last_name)'```
+    ```'CONSTRAINT pk_person UNIQUE (id, last_name)'```
+    ```'CONSTRAINT fk_order_person FOREIGN KEY (person_id) REFERENCES person(id)'```
+    ```'CONSTRAINT chk_person_age CHECK (age>=18 AND city="Sandnes")'```
+    ```'CONSTRAINT fk_note_task FOREIGN KEY (task_id) REFERENCES task(id)'```
+    ```'CONSTRAINT fk_task_user FOREIGN KEY (user_id) REFERENCES user(id)'```
       
-      1. Use short table names
-      Examples: site is better than site_detail
+    1. Use short table names
+    Examples: site is better than site_detail
       
-      1. Date type column names: Suffix your date-type column names with _on or _date.
-      Example: ```updated_on, updated_date or pub_date```
+    1. Date type column names: Suffix your date-type column names with _on or _date.
+    Example: ```updated_on, updated_date or pub_date```
       
-      1. Date-Time type column names: If your column name has time with it, then suffix them with _at or _time.
-      Examples: ```ordered_at, order_time or created_time```
+    1. Date-Time type column names: If your column name has time with it, then suffix them with _at or _time.
+    Examples: ```ordered_at, order_time or created_time```
       
-      1. Boolean type column Names: If you have boolean type column names, then prefix them with is_ or has_.
-      Examples: ```is_admin or has_membership```
+    1. Boolean type column Names: If you have boolean type column names, then prefix them with is_ or has_.
+    Examples: ```is_admin or has_membership```
 
 1. Only things worse than a bad convention are multiple conventions or no conventions. 
