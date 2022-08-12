@@ -4,7 +4,7 @@
 
 "OHA Team Coding Convention Manifesto" contains a set of rules and requirements that dictate why and how OHA Team follow coding convention standards in company. You can find full document in [OHA-Team-Coding-Convention-Manifesto.md](./README.md) or visit our official website [OHA Team Coding Convention Manifesto](https://ohateam.org/coding-convention-manifesto.com) to find previous versions and localized specifications.
 
-All projects, apps, files, classes, functions, variable, etc. MUST apply rule of OHA Team coding convention.
+All projects, apps, files, classes, functions, variable, etc. MUST apply rule of OHA Team coding convention. Except that the current project already has a certain standard.
 
 The goal of this manifesto is to produce safe, secure, fast and easy understandable code by using manifesto standard. 
 
