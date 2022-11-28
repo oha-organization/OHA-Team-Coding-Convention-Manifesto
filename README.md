@@ -4,7 +4,7 @@
 
 "OHA Team Coding Convention Manifesto" contains a set of rules and requirements that dictate why and how OHA Team follow coding convention standards in company. You can find full document in [OHA-Team-Coding-Convention-Manifesto.md](./README.md) or visit our official website [OHA Team Coding Convention Manifesto](https://ohateam.org/coding-convention-manifesto.com) to find previous versions and localized specifications.
 
-All projects, apps, files, classes, functions, variable, etc. MUST apply rule of OHA Team coding convention. Except that the current project already has a certain standard. This manifesto is specifically focused on the python programming language. For PHP language use this conventions -> https://www.php-fig.org/
+All projects, libraries, modules, apps, files, classes, functions, methods, variables, etc. MUST apply rule of OHA Team coding convention. Except that the current project already has a certain standard. This manifesto is specifically focused on the python programming language. For PHP language use this conventions -> https://www.php-fig.org/
 
 The goal of this manifesto is to produce safe, secure, fast and easy understandable code by using manifesto standard. 
 
@@ -60,11 +60,11 @@ unless there is an acceptable logical reason. Brief examples as follows:
         
         ```person, height, first_name```
 
-    1. Collection(list, tuple, array, vs.): Plural names or name_list.
+    1. Collection(list, tuple, array, vs.): Plural names or name_list. Remember to keep consistent.
     
         Examples: 
         
-        ```colors, user_list, question_list, questions```
+        ```colors, color_list, users, user_list, questions, question_list```
 
     1. Function(method): All small letters, snake case, concise imperative sentences.
     Context + Verb + How (user_get_by_id)
@@ -78,13 +78,13 @@ unless there is an acceptable logical reason. Brief examples as follows:
     
         Example:
         
-        ```sql len, isinstance(), getattr() settattr, get_elements_by_id(), get_elements_by_class_name()```
+        ```len, isinstance, getattr, settattr, get_elements_by_id, get_elements_by_class_name```
       
     1. Class: Pascal case and noun.
     
         Examples:
         
-        ```Color, Animal, IndexView```
+        ```Color, Animal, ClassName, IndexView```
       
     1. Module(file): All small letters, single word, if two or more word use flat case style.
     
@@ -115,7 +115,7 @@ unless there is an acceptable logical reason. Brief examples as follows:
       
     1. Avoid using type names(text, date, integer, timestamp, etc.).
 
-    1. Use singlular names for tables, views, and other relations NOT plural.
+    1. Use singlular names for tables, views, and other relations NOT plural. If you are not aggree keep consitent.
     
         Examples:
         
@@ -127,7 +127,7 @@ unless there is an acceptable logical reason. Brief examples as follows:
         
         ```first_name, last_name, middle_name```
       
-    1. Primary key fields should be named ```id, NOT userid, userID, userId or user_id```
+    1. Primary key fields should be named ```id```, NOT ~userid, userID, userId or user_id~
       
     1. Foreign Key fields should be named ```foo_id```(foo is table name)
 
