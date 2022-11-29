@@ -67,11 +67,11 @@ unless there is an acceptable logical reason. Brief examples as follows:
         ```colors, color_list, users, user_list, questions, question_list```
 
     1. Function(method): All small letters, snake case, concise imperative sentences.
-    Context + Verb + How (user_get_by_id)
+    ```<entity>_<action>``` or ```<context>_<verb>_<how>``` (user_get_by_id)
     
         Examples: 
         
-        ```user_add(), user_delete(), user_delete_by_name()```
+        ```user_add(), user_create(), user_delete(), user_delete_by_name()```
       
     1. If function name is too general like [Python builtin functions](https://docs.python.org/3/library/functions.html)
     use only verb or Verb + Context + How. As The Zen of Python -> Although practicality beats purity.
