@@ -27,6 +27,9 @@ Folowed standarts:
 1. [PEP 8 – Style Guide for Python Code](https://peps.python.org/pep-0008/)
 1. [PEP 20 – The Zen of Python](https://peps.python.org/pep-0020/)
 1. [GitHub Workflow for Committing](https://docs.github.com/en/actions/using-workflows)
+1. [Django Styleguide](https://github.com/HackSoftware/Django-Styleguide)
+1. [Django Coding Style](https://docs.djangoproject.com/en/dev/internals/contributing/writing-code/coding-style/)
+1. [JavaScript Style Guide](https://www.w3schools.com/js/js_conventions.asp)
 
 Followed standarts will be added.
 
