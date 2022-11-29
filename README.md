@@ -191,4 +191,10 @@ unless there is an acceptable logical reason. Brief examples as follows:
         
         ```is_admin or has_membership```
 
+    1. Use lower case file names: Always use lower case file names (if possible).
+    
+        Examples:
+        
+        ```flower.jpg is better then Flower.jpg.```
+    
 1. Only things worse than a bad convention are multiple conventions or no conventions. 
