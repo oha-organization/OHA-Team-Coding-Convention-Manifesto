@@ -118,7 +118,7 @@ unless there is an acceptable logical reason. Brief examples as follows:
       
     1. Avoid using type names(text, date, integer, timestamp, etc.).
 
-    1. Use singlular names for tables, views, and other relations NOT plural. If you are not aggree keep consitent.
+    1. Use singlular names for tables, views, and other relations NOT plural. If you are not aggree keep consistent.
     
         Examples:
         
